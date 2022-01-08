@@ -45,20 +45,21 @@ person.printArms();
 
 
 //Classes & inheritance simpler syntex ES6
-class Human {
+class Human1 {
     arms = 2;
 
     printArms = () => {
         console.log(this.arms);
     }
 }
-class Person extends Human {
+class Person1 extends Human1 {
     name = 'Person Name';
     printName = () => {
         console.log(this.name)
     }
 }
 
-const person = new Person();
+const person1 = new Person1();
 person.printName();
+person.arms = 3;
 person.printArms();
