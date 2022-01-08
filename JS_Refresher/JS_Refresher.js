@@ -63,3 +63,37 @@ const person1 = new Person1();
 person.printName();
 person.arms = 3;
 person.printArms();
+
+//Spread Operator
+const arr = [1, 2 , 3];
+console.log(...arr)
+
+//Destructuring
+const arr2 = ['a', 'b'];
+const [a1, b2] = arr2;
+console.log(a1 + b2)
+
+//reference and primitive types
+let value = 1;
+const object = {
+    a: 1,
+    b: 2
+};
+
+let copyValue = value //copy value
+const objetcRef = object //reference
+
+objetcRef.a = 3;
+copyValue = 3;
+console.log(object.a);
+console.log(value);
+
+//array methods ex: map
+const numbers = [1, 2, 3, 4];
+
+const result =  numbers.map((num) => {
+    return num * 2;
+})
+
+console.log(numbers);
+console.log(result);
