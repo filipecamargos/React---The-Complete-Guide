@@ -17,7 +17,6 @@ console.log(sum(1, 2));
 console.log(sum1(1, 2));
 console.log(sum2(1, 2));
 
- 
 //Classes & inheritance
 class Human {
     constructor() {
@@ -95,5 +94,25 @@ const result =  numbers.map((num) => {
     return num * 2;
 })
 
-console.log(numbers);
+//find the first number
+found = result.find(num => num >= 4);
+//find the index of the first number
+const foundIndex = result.findIndex(num => num >= 4);
+//filter the numbers and return an array
+const filter = result.filter(num => num >= 6);
+//execute returning a call back and adding
+const total =  result.reduce((a, b) => a + b);
+//concat two or more arrays
+const concatArr = numbers.concat(result);
+//return a shallow copy of the array from start to end - return a copy
+const sliceArr = concatArr.slice(0, 4);
+//change the array by removing or replacing
+sliceArr.splice(1, 0, 'new');
+
 console.log(result);
+console.log(found);
+console.log(foundIndex);
+console.log(filter);
+console.log(total);
+console.log(concatArr);
+console.log(sliceArr)
