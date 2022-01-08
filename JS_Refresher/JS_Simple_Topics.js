@@ -16,3 +16,29 @@ const sum2 = (a, b) => a + b;
 console.log(sum(1, 2));
 console.log(sum1(1, 2));
 console.log(sum2(1, 2));
+
+ 
+//Classes & inheritance
+class Human {
+    constructor() {
+        this.arms = 2;
+    }   
+
+    printArms() {
+        console.log(this.arms);
+    }
+}
+class Person extends Human {
+    constructor() {
+        super();
+        this.name = 'Person Name';
+    }
+
+    printName() {
+        console.log(this.name)
+    }
+}
+
+const person = new Person();
+person.printName();
+person.printArms();
