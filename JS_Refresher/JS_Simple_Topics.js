@@ -42,3 +42,23 @@ class Person extends Human {
 const person = new Person();
 person.printName();
 person.printArms();
+
+
+//Classes & inheritance simpler syntex ES6
+class Human {
+    arms = 2;
+
+    printArms = () => {
+        console.log(this.arms);
+    }
+}
+class Person extends Human {
+    name = 'Person Name';
+    printName = () => {
+        console.log(this.name)
+    }
+}
+
+const person = new Person();
+person.printName();
+person.printArms();
