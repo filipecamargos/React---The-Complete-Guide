@@ -1,13 +1,15 @@
-import React from 'react';
+import React, {useReducer, useState} from 'react';
 
 import ExpenseDate from './ExpenseDate';
 import Card from '../UI/Card';
 import './ExpenseItem.css';
 
 const ExpenseItem = (props) => {
+  const [title, setTitle] = useState(props.title);
+
   //Handle the btn click
   const clickHandler = () => {
-    console.log("Click!")
+    setTitle("Updated!")
   }
 
   return (
