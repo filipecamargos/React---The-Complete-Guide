@@ -1,5 +1,5 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-React_Expense_Tracker/node_modules
-React_Expense_Tracker/.eslintcache
+2_React_Expense_Tracker/node_modules
+2_React_Expense_Tracker/.eslintcache
