@@ -9,3 +9,12 @@
 
 5_Redux/node_modules
 5_Redux/.eslintcache
+
+6_Router/node_modules
+6_Router/.eslintcache
+
+7_Authentication/node_modules
+7_Authentication/.eslintcache
+
+8_NextJS/node_modules
+8_NextJS/.eslintcache
